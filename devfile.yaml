@@ -21,10 +21,10 @@ components:
       volumeMounts:
         - name: m2
           path: /home/user/.m2
-      cpuLimit: '4'
-      cpuRequest: '1'
-      memoryLimit: '8G'
-      memoryRequest: '4G'
+      cpuLimit: '1000m'
+      cpuRequest: '250m'
+      memoryLimit: '1G'
+      memoryRequest: '1G'
       mountSources: true
   - name: m2
     volume:

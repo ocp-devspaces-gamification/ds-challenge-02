@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: devspaces-challenge-02
+  name: ds-challenge-02
 components:
   - name: tools
     container:

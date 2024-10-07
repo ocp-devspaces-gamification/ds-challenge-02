@@ -12,7 +12,7 @@ public class GreetingResource {
 /** 
 public String greetUser() {
  String user;
- return "Hello"+user;
+ return "Hello "+user;
 }
 */
 

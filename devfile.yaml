@@ -30,7 +30,7 @@ commands:
     exec:
       label: "1. Package the application"
       component: tools
-      workingDir: ${PROJECTS_ROOT}
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
       commandLine: "mvn package"
       group:
         kind: build
@@ -39,7 +39,7 @@ commands:
     exec:
       label: "2. Start Development mode (Hot reload + debug)"
       component: tools
-      workingDir: ${PROJECTS_ROOT}
+      workingDir: ${PROJECTS_ROOT}/ds-challenge-02
       commandLine: "mvn compile quarkus:dev"
       group:
         kind: run

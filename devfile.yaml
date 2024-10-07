@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: registry.redhat.io/devspaces/udi-rhel8:3.16
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       env:
         - name: QUARKUS_HTTP_HOST
           value: 0.0.0.0
@@ -30,7 +30,7 @@ commands:
     exec:
       label: "1. Package the application"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/quarkus-quickstarts/getting-started
+      workingDir: ${PROJECTS_ROOT}
       commandLine: "mvn package"
       group:
         kind: build
@@ -39,7 +39,7 @@ commands:
     exec:
       label: "2. Start Development mode (Hot reload + debug)"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/quarkus-quickstarts/getting-started
+      workingDir: ${PROJECTS_ROOT}
       commandLine: "mvn compile quarkus:dev"
       group:
         kind: run

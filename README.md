@@ -20,5 +20,6 @@
 
 ### Resources
 * https://quarkus.io/
-* 
+* https://quarkus.io/guides/rest
+
 

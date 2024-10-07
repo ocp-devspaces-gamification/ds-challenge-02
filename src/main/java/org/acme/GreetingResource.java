@@ -9,10 +9,12 @@ import jakarta.ws.rs.core.MediaType;
 public class GreetingResource {
 
 //TO DO :: Write the challenge-02 method
+/** 
 public String greetUser() {
  String user;
  return "Hello"+user;
 }
+*/
 
 //Sample Hello Method
 @Path("hello")

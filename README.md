@@ -21,5 +21,10 @@
 ### Resources
 * https://quarkus.io/
 * https://quarkus.io/guides/rest
+* https://registry.devfile.io/viewer/devfiles/community/udi
 
+### What did we learn
+* Developers life is getting easier with required extensions already integrated via the DevSpaces. This takes the guess work out
+* Developers do not have to worry about command line tools
+* Taking one step forward to creating the developer joy. In this excercise, the developer still has to figure out how to compile, package etc.. Let's see how to address those in the next challenges
 

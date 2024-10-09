@@ -6,7 +6,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/api")
-public class GreetingResource {
+public class ChallengeResource {
 
 //TO DO :: Write the challenge-02 method
 /** 

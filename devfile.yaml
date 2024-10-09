@@ -13,11 +13,6 @@ components:
           name: debug
           protocol: tcp
           targetPort: 5005
-        - exposure: public
-          name: greet-name
-          protocol: https
-          targetPort: 8080
-          path: /api/greet/developer
       volumeMounts:
         - name: m2
           path: /home/user/.m2

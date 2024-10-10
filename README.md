@@ -5,7 +5,6 @@
 * However, you will start seeing benefits of DevSpaces (Extensions + Tooling)
 
 ### Set Up + verification
-* Reminder : You should have created this workspace from your teams challenges folder in source control
 * After DevSpaces initialization, check the extensions. You will see under "DevSpaces.apps.cluster" the extension "Language Support for Java(TM) by Red Hat" is already installed. This is done via the ".vscode/extensions.json" file
 * Tools that are requires for development are already present : Type "oc --help", "jq --help" etc... This is possible because of the ds-challenge-02/devfile.yaml "tools" container (line#07)
 * With tools and the extensions already part of the source code, your job becomes much easier to just start coding
@@ -25,7 +24,7 @@
 * https://quarkus.io/guides/rest
 * https://registry.devfile.io/viewer/devfiles/community/udi
 
-### What did we learn
+### What did we learn?
 * Developers life is getting easier with required extensions already integrated via the DevSpaces. This takes the guess work out
 * Extensions settings are created under ".vscode/extensions.json" file
 * Developers do not have to worry about command line tools

@@ -4,6 +4,8 @@ metadata:
 components:
   - name: tools
     container:
+      # Learn more about Universal Developer Image Here
+      # https://registry.devfile.io/viewer/devfiles/community/udi
       image: quay.io/devfile/universal-developer-image:ubi8-latest
       env:
         - name: QUARKUS_HTTP_HOST

@@ -7,18 +7,39 @@
 ### Set Up + verification
 * After DevSpaces initialization, check the extensions. You will see under "DevSpaces.apps.cluster" the extension "Language Support for Java(TM) by Red Hat" is already installed. This is done via the ".vscode/extensions.json" file
 * Tools that are required for development are already present : Type "oc --help", "jq --help" etc... This is possible because of the ds-challenge-02/devfile.yaml "tools" container (line#07). Using this tools container allows for standardization across the developers (everyone will have the same set of tools when logged in)
+    ```bash
+    oc --help
+    ```
+    ```bash
+    jq --help
+    ```
 * With tools and the extensions already part of the source code, your job becomes much easier to just start coding
-* Open a terminal. Run the command "chmod 755 mvnw" to change the mvnw file to be executable
-* Run the command "./mvnw compile" to check for errors. You will see the code compiles fine
-* Run the quarkus application in live coding mode with the command : "./mvnw quarkus:dev"
+* Open a terminal. Run the below command to change the mvnw file to be executable
+    ```bash
+    chmod 755 mvnw
+    ```
+* Run the below command to check for compilation errors. You will see the code compiles fine
+    ```bash
+    ./mvnw compile
+    ```
+* Run the quarkus application in live coding mode
+    ```bash
+    ./mvnw quarkus:dev
+    ```
 * Select your option "y/n" to the question (if asked) : Do you agree to contribute anonymous build time data to the Quarkus community? 
 * Open another terminal and invoke "curl localhost:8080/api/greet/bengaluru". You will see empty result
 * Openthe "src/main/java/org/acme/ChallengeResource.java". You will observe the method "greetUser" needs to be fixed.
 
 ### Success Criteria
 * Method "greetUser" is updated to accept a string as a parameter and returns a concatenated string of "Hello " and the passed name
-* Invoking "curl localhost:8080/api/greet/bengaluru" will return "Hello bengaluru"
-* Invoking "curl localhost:8080/api/greet/delta" will return "Hello delta"
+* Invoking below service endpoint and it should return "Hello bengaluru"
+    ```bash
+    curl localhost:8080/api/greet/bengaluru
+    ```
+* Invoking below service endpoint will return "Hello delta"
+    ```bash
+    curl localhost:8080/api/greet/delta
+    ```
 
 ### Resources
 * https://quarkus.io/
